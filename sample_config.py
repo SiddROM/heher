@@ -4,14 +4,14 @@ class Config(object):
     # get a token from https://chatbase.com
     CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "")
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6129167866:AAGIEh5O1Zgt_9GLRc3pmaUq6VYeVvTca5o")
     # The Telegram API things
-    USER_NAME = os.environ.get("USER_NAME", "")
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    USER_NAME = os.environ.get("USER_NAME", "RandomRenamerBot")
+    APP_ID = int(os.environ.get("APP_ID", 25341724))
+    API_HASH = os.environ.get("752a1fb86785c5bd35eb7b1e42071786")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "5925926828 6046532356 5860097723 5895510545 1065732478").split())
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # the download location, where the HTTP Server runs
@@ -34,5 +34,5 @@ class Config(object):
     # set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3600
     # watermark file
-    DEF_WATER_MARK_FILE = "Renamed by @renamer_ns_bot"
+    DEF_WATER_MARK_FILE = ""
 
